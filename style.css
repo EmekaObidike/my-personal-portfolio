@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    
+    
+    background-position: center;
+}
+      
+.logo{
+    height: 100px;
+    margin-top: 0;
+    margin-left: 0;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*--------------------intro------------------------*/
+.austin{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.austin-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.austin-col img{
+    width: 100%;
+    margin-top: -100px;
+    border-radius: 10%;
+}
+.austin-col p{
+    padding-top: 0;
+    font-size: 30px;
+}
+.austin-col h1{
+    padding: 15px 0 25px;
+    font-size: 60px;
+}
+.austin-col h1 span{
+    color:#ff004f;
+}
+
+
+/*--------------------------about------------------------*/
+#about{
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
+    padding-bottom: 50px;
+    color: #ababab;
+}
+.about-col1{
+    flex-basis: 35%;
+}
+.about-col1 img{
+    width: 100%;
+    margin-top: 0;
+    border-radius: 10px;
+}
+.about-col2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+p{
+    line-height: 1.5;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    color: #bee97e;   
+}
