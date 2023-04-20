@@ -10,18 +10,15 @@ body{
 }
 #header{
     width: 100%;
-    
-    
     background-position: center;
 }
       
 .logo{
     height: 100px;
-    margin-top: 0;
-    margin-left: 0;
 }
 .container{
     padding: 10px 10%;
+    background-color: #080808;
 }
 nav{
     display: flex;
@@ -83,9 +80,7 @@ nav ul li a:hover::after{
     padding: 15px 0 25px;
     font-size: 60px;
 }
-.austin-col h1 span{
-    color:#ff004f;
-}
+
 
 
 /*--------------------------about------------------------*/
@@ -115,6 +110,8 @@ nav ul li a:hover::after{
 p{
     line-height: 1.5;
 }
+
+    
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -143,4 +140,13 @@ p{
     list-style: none;
     margin: 10px 0;
     color: #bee97e;   
+}
+.tab-contents ul li span{
+    color:#ff004f;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }
