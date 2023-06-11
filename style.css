@@ -83,6 +83,9 @@ nav ul li a:hover::after{
     padding: 15px 0 25px;
     font-size: 60px;
 }
+.nut{
+    color: rgb(101, 28, 28);
+}
 
 
 
