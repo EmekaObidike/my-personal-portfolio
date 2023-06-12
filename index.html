@@ -32,10 +32,12 @@
     <section class="austin">
         <div class="row">
          <div class="austin-col">
-             <h1 id="auto-input"></h1>
-             <p>A passionate Front-end Developer based in Handlova, Slovakia. I'm a lifelong learner 
-                and i might have a thing for <span class="nut">Nutella!</span>
-                <i class="fa-regular fa-face-smile"></i>
+             <h1 id="auto-input">&#x1F44B;
+             </h1>
+             <p>A passionate Front-end Developer based in Handlova, Slovakia&#128205;
+             I'm a lifelong learner and  
+                I used to teach <span class="job">IT</span> and <span class="job">English</span> in 
+                Primary & Secondary Schools.
              </p>
              <div class="social-icons">
                 <a href="https://github.com/EmekaObidike"><i class="fa-brands fa-github"></i></a>
@@ -60,15 +62,21 @@
                     <h1 class="sub-title">About Me</h1>
                     <p>I proudly earned my IT degree from the esteemed University of Ghana. However, 
                         life had a different plan for me. Instead of diving straight into a career as a developer,
-                         I embarked on a transformative journey. I dedicated my time and skills to volunteer as a 
-                         teacher in village schools across Africa, empowering young minds with the wonders of education.<br>
-                        But that's not all! I also had the privilege of serving as a project manager for an inspiring 
-                        NGO called Becky's Foundation. Together, we embarked on various initiatives aimed at making 
-                        a positive difference in communities. From educational programs to community development projects,
-                         I took charge, ensuring that these endeavors had a lasting impact.<br>
-                        Now, I'm ready to embrace the next chapter. It's time for me to fully immerse myself in the world of
-                        coding. With my dedication and commitment, I aim to craft innovative solutions and contribute
-                         to the field of software development. One line of code at a time!<br>
+                         I embarked on a transformative journey.
+                         <div id="additionalContent" style="display: none;">
+                            I dedicated my time and skills to volunteer as an IT and English 
+                            tutor in village schools across Africa, empowering young minds with the wonders of education.<br>
+                           But that's not all! I also had the privilege of serving as a project manager for an inspiring 
+                           NGO called Becky's Foundation. Together, we embarked on various initiatives aimed at making 
+                           a positive difference in communities. From educational programs to community development projects,
+                            I took charge, ensuring that these endeavors had a lasting impact.<br>
+                           Now, I'm ready to embrace the next chapter. It's time for me to fully immerse myself in the world of
+                           coding. With my dedication and commitment, I aim to craft innovative solutions and contribute
+                            to the field of software development. One line of code at a time <i class="fa-regular fa-face-smile"></i>
+                          </div>
+                          <button onclick="toggleContent()" id="toggleButton">Show More About Me</button>
+
+                          
                     </p><br>
                    
                     <p class="click">CLICK ON TAB LINKS TO SEE INFORMATION</p>
@@ -77,7 +85,7 @@
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="Technical skills">
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -90,6 +98,8 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
+                            <li><span>2018 - 2019</span><br>IT & English tutor at Golden Foundation Academy.</li>
+                            <li><span>2019 - 2020</span><br>IT & English tutor at Erickson College(Volunteer).</li>
                             <li><span>2020 - 2022</span><br>Project Manager & I.T Consultant at Becky's Foundation(Volunteer).</li>
                         </ul>
                     </div>
@@ -232,6 +242,22 @@ function opentab(tabname){
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab")
 }
+function toggleContent() {
+  var additionalContent = document.getElementById("additionalContent");
+  var toggleButton = document.getElementById("toggleButton");
+
+  if (additionalContent.style.display === "none") {
+    additionalContent.style.display = "block";
+    toggleButton.textContent = "Show Less";
+  } else {
+    additionalContent.style.display = "none";
+    toggleButton.textContent = "Show More About Me";
+  }
+}
+
+
+
+
 </script>
 <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
 <script>

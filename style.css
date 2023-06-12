@@ -83,8 +83,8 @@ nav ul li a:hover::after{
     padding: 15px 0 25px;
     font-size: 60px;
 }
-.nut{
-    color: rgb(101, 28, 28);
+.job{
+    color:#bee97e;
 }
 
 
@@ -97,6 +97,16 @@ nav ul li a:hover::after{
     padding-bottom: 50px;
     color: #ababab;
 }
+#toggleButton{
+    margin: 10px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ff004f;
+} 
 
 
 .sub-title{
